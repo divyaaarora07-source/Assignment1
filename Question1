@@ -1,0 +1,30 @@
+using System;
+
+class Student
+{
+    static void Main()
+    {
+        string name;
+        int rollNumber;
+        double marks;
+
+        // Input student details
+        Console.Write("Enter Student Name: ");
+        name = Console.ReadLine();
+
+        Console.Write("Enter Roll Number: ");
+        rollNumber = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter Marks: ");
+        marks = Convert.ToDouble(Console.ReadLine());
+
+        // Display student details
+        Console.WriteLine("\n------ Student Details ------");
+        Console.WriteLine("Name        : " + name);
+        Console.WriteLine("Roll Number : " + rollNumber);
+        Console.WriteLine("Marks       : " + marks);
+        Console.WriteLine("-----------------------------");
+
+        Console.ReadLine();
+    }
+}
