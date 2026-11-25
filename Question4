@@ -1,0 +1,45 @@
+using System;
+
+class StudentGrade
+{
+    static void Main()
+    {
+        int marks;
+
+        // Input student marks
+        Console.Write("Enter Student Marks (0-100): ");
+        marks = Convert.ToInt32(Console.ReadLine());
+
+        // Check grade
+        if (marks < 0 || marks > 100)
+        {
+            Console.WriteLine("Invalid Marks!");
+        }
+        else if (marks >= 91)
+        {
+            Console.WriteLine("Grade: O");
+        }
+        else if (marks >= 81)
+        {
+            Console.WriteLine("Grade: A+");
+        }
+        else if (marks >= 71)
+        {
+            Console.WriteLine("Grade: A");
+        }
+        else if (marks >= 61)
+        {
+            Console.WriteLine("Grade: B+");
+        }
+        else if (marks >= 51)
+        {
+            Console.WriteLine("Grade: B");
+        }
+        else
+        {
+            Console.WriteLine("Grade: Fail");
+        }
+
+        Console.ReadLine();
+    }
+}
