@@ -1,0 +1,35 @@
+using System;
+
+class Palindrome
+{
+    static void Main()
+    {
+        int num, originalNum, remainder, reverse = 0;
+
+        // Input a number
+        Console.Write("Enter an integer: ");
+        num = Convert.ToInt32(Console.ReadLine());
+
+        originalNum = num;
+
+        // Reverse the number
+        while (num > 0)
+        {
+            remainder = num % 10;
+            reverse = reverse * 10 + remainder;
+            num = num / 10;
+        }
+
+        // Check palindrome
+        if (originalNum == reverse)
+        {
+            Console.WriteLine(originalNum + " is a Palindrome Number.");
+        }
+        else
+        {
+            Console.WriteLine(originalNum + " is Not a Palindrome Number.");
+        }
+
+        Console.ReadLine();
+    }
+}
